@@ -1,25 +1,75 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import profile from './profile-pic.jpg';
+import einstein from './einstein2.jpg';
+import iris from './iris.jpg';
+import sunlight from './sunlight.jpg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className = "background">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <aside className="sidebar">
+            <button name="about">About</button>
+            <button name="personal">Personal</button>
+            <button name="contact">Contact</button>
+          </aside>
+          <img src={profile} className="Profile-pic" alt="profile" />
+          <div className="title">
+            <h1 className="header__title">
+              David Kelley
+            </h1>
+              <h2 className="subject">
+                Front End Developer
+              </h2>
+            <p className="description">Four months ago I received my scholarship from Google to embark on a new career in web development.
+               I am building my skills and tackling new challenges.
+            </p>
+        </div>
+          
         </header>
+          <main>
+    <section className="content">
+         <div className="projects">
+            <h2 className="files">Featured Work</h2>
+
+
+              <div className="files">
+                <a href="https://einstein.com">
+                  <img className="files_pic" src={einstein} alt="Einstein" />
+                  <p className="file-name">Einstein</p>
+                </a>
+              </div>
+
+              <div className="files">
+                <a href="https://www.schreinersgardens.com/">
+                  <img className="files_pic" src={iris} alt="Iris" />
+                  <p className="file-name">Iris</p>
+                </a>
+              </div>
+
+              <div className="files">
+                <a href="https://sunlight.com">
+                  <img className="files_pic" src={sunlight} alt="Sunlight" />
+                  <p className="file-name">Sunlight</p>
+                </a>
+              </div>
+
+          </div>
+      
+    </section>
+
+    <footer>
+      <ul>
+        <li className="links"><a href="https://github.com/davekelley71">GitHub</a></li>
+        <li className="links"><a href="#">Contact me</a></li>
+        <li className="links"><a href="#">Blog</a></li>
+      </ul>
+    </footer>
+  </main>
+    </div>
       </div>
     );
   }

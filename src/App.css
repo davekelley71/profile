@@ -1,13 +1,34 @@
-.App {
+.App, .background {
   text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+ 
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.background {
+   background-image: url("code.jpg");
+   width: 100%;
+   height: 100%;
+   max-height: 100%;
+   margin: 0;
+   padding: 0;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+}
+
+.subject {
+  color: white;
+}
+
+.description {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .App-header {
+  background-image: url("colors.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -18,8 +39,36 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Profile-pic {
+  display: flex;
+  align-items: center;
+  max-height: flex;
+  max-width: 50%;
+  box-shadow: 0 10px 10px rgba(255, 255, 255, 1.);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.files {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: silver;
+}
+
+.file-name {
+  color: #FFFFFFFF;
+}
+
+button {
+  display: row;
+  border-radius: 5px;
+  background-color: #257262FF;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  color: white;
 }
 
 @keyframes App-logo-spin {
