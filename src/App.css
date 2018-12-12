@@ -86,7 +86,11 @@ button {
   flex-direction: row;
 }
 
-
+.carouselImages {
+  display: flex;
+  height: 250px;
+  width: 250px;
+}
 
 @keyframes App-logo-spin {
   from {
