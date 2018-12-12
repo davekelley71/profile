@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Carousel from './components/Carousel';
 import profile from './profile-pic.jpg';
 import einstein from './einstein2.jpg';
 import iris from './iris.jpg';
@@ -32,31 +33,8 @@ class App extends Component {
     <section className="content">
          <div className="projects">
             <h2 className="files">Featured Work</h2>
-
-
-              <div className="files">
-                <a href="https://einstein.com">
-                  <img className="files_pic" src={einstein} alt="Einstein" />
-                  <p className="file-name">Einstein</p>
-                </a>
-              </div>
-
-              <div className="files">
-                <a href="https://www.schreinersgardens.com/">
-                  <img className="files_pic" src={iris} alt="Iris" />
-                  <p className="file-name">Iris</p>
-                </a>
-              </div>
-
-              <div className="files">
-                <a href="https://sunlight.com">
-                  <img className="files_pic" src={sunlight} alt="Sunlight" />
-                  <p className="file-name">Sunlight</p>
-                </a>
-              </div>
-
           </div>
-      
+    < Carousel />
     </section>
 
     <footer>
