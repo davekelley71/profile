@@ -9,7 +9,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className = "background">
         <header className="App-header">
           <aside className="sidebar">
             <button name="about">About</button>
@@ -28,9 +27,8 @@ class App extends Component {
                I am building my skills and tackling new challenges.
             </p>
         </div>
-          
-        </header>
-          <main>
+
+        <main>
     <section className="content">
          <div className="projects">
             <h2 className="files">Featured Work</h2>
@@ -69,7 +67,10 @@ class App extends Component {
       </ul>
     </footer>
   </main>
-    </div>
+          
+        </header>
+          
+    
       </div>
     );
   }
