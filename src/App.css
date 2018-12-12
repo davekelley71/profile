@@ -42,12 +42,16 @@
 .Profile-pic {
   display: flex;
   align-items: center;
-  max-height: flex;
-  max-width: 50%;
+  max-height: 400px;
+  max-width: 300px;
   box-shadow: 0 10px 10px rgba(255, 255, 255, 1.);
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
+}
+
+@media screen and(min-width: ) {
+  
 }
 
 .files {
