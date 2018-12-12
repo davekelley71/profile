@@ -18,24 +18,22 @@ class App extends Component {
           </aside>
           <img src={profile} className="Profile-pic" alt="profile" />
           <div className="title">
-            <h1 className="header__title">
+            <h2 className="header__title">
               David Kelley
-            </h1>
-              <h2 className="subject">
+            </h2>
+              <h4 className="subject">
                 Front End Developer
-              </h2>
-            <p className="description">Four months ago I received my scholarship from Google to embark on a new career in web development.
+              </h4>
+            <span className="description">Four months ago I received my scholarship from Google to embark on a new career in web development.
                I am building my skills and tackling new challenges.
-            </p>
+            </span>
         </div>
-
-        <main>
-    <section className="content">
-         <div className="projects">
+           
+          <div className="projects">
             <h2 className="files">Featured Work</h2>
           </div>
-    < Carousel />
-    </section>
+
+      < Carousel />   
 
     <footer>
       <ul>
@@ -44,7 +42,7 @@ class App extends Component {
         <li className="links"><a href="#">Blog</a></li>
       </ul>
     </footer>
-  </main>
+  
           
         </header>
           
